@@ -4,10 +4,10 @@ import pandas as pd
 from joblib import load
 # Load models for making predictions
 models = {
-    'TenYearCHD': load("https://github.com/ro-drick/Heart-Disease-Prediction/blob/master/Heart-Disease-Prediction/models/best_model_TenYearCHD.joblib"),
-    'prevalentStroke': load("https://github.com/ro-drick/Heart-Disease-Prediction/tree/master/Heart-Disease-Prediction/models/best_model_prevalentStroke.joblib"),
-    'prevalentHyp': load("https://github.com/ro-drick/Heart-Disease-Prediction/tree/master/Heart-Disease-Prediction/models/best_model_prevalentHyp.joblib"),
-    'diabetes': load("https://github.com/ro-drick/Heart-Disease-Prediction/tree/master/Heart-Disease-Prediction/models/best_model_diabetes.joblib")
+    'TenYearCHD': load("best_model_TenYearCHD.joblib"),
+    'prevalentStroke': load("best_model_prevalentStroke.joblib"),
+    'prevalentHyp': load("best_model_prevalentHyp.joblib"),
+    'diabetes': load("best_model_diabetes.joblib")
 }
 
 feature_names = [
